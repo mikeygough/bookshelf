@@ -1,4 +1,5 @@
 import React from 'react';
+import './Book.css';
 
 function Book(props) {
   const { title, author, image, review } = props;
@@ -6,8 +7,9 @@ function Book(props) {
     <div className="Book">
       <img
         src={`${process.env.PUBLIC_URL}/images/${image}`}
-        width="300"
         alt="Testing"
+        width="300"
+        height="300"
       />
       <h1>{title}</h1>
       <h2>{author}</h2>

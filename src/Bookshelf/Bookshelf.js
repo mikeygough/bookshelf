@@ -1,23 +1,24 @@
 import React from 'react';
 import Book from '../Book/Book';
+import './Bookshelf.css';
+
+import data from '../book-data.json';
 
 function Bookshelf() {
-  return (
-    <div className="Bookshelf">
+  // deconstruct inside the map
+  const books = data.map(({ id, title, author, image, review }) => {
+    return (
       <Book
-        title="The Box"
-        author="Marc Levinson"
-        image="the-box-by-marc-levinson.jpg"
-        review="Really good!"
+        key={id}
+        title={title}
+        author={author}
+        image={image}
+        review={review}
       />
-      <Book
-        title="Code Complete"
-        author="Steve McConnell"
-        image="code-complete-by-steve-mcconnell.jpg"
-        review="A little much!"
-      />
-    </div>
-  );
+    );
+  });
+
+  return <div className="Bookshelf">{books}</div>;
 }
 
 export default Bookshelf;
