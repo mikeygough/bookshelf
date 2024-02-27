@@ -2,7 +2,7 @@ import React from 'react';
 import Book from '../Book/Book';
 import './Bookshelf.css';
 
-import data from '../book-data.json';
+import data from '../../book-data.js';
 
 function Bookshelf() {
   // deconstruct inside the map

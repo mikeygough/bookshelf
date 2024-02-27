@@ -1,0 +1,19 @@
+.Bookshelf {
+  width: calc(100% - 80px);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+@media screen and (max-width: 1070px) {
+  .Bookshelf {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Bookshelf {
+    grid-template-columns: 1fr;
+  }
+}

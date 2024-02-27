@@ -7,7 +7,7 @@
       "review": "Really good!",
       "read": false,
       "stars": 0,
-      "amazon_link": "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691170819/ref=sr_1_1?crid=3DWLSB7MXLV1X&dib=eyJ2IjoiMSJ9.LHA8hOWR39zuS3Q2pBtAAbS8A3li1HtfjOL71Lkt25Gvl9-4a8YLkU46kShFLBoOmgVMjf9elLMqhfZJF5drIGihMuCbWJ51aCrzbRfI4go6SUUbEOjrgGqsEKFC8cKvAzITSRWQ9Evd0WOD-kq7TOST9GBDJam5orabohg2g6G2auUpswIO--fegPBxrb0Xr91sS5VEfn2DuRHrIKAkWTGkHuJJyF4scGAGQ4NagWE.8C_iB8-_0ULgu2GJPm9SaJnas0Dar9em7E8GUxae6Fc&dib_tag=se&keywords=the+box+levinson&qid=1708990451&sprefix=the+box+levinson%2Caps%2C125&sr=8-1"
+      "amazon_link": "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691170819"
    },
    {
       "id": 1,
@@ -17,6 +17,26 @@
       "review": "A little much!",
       "read": false,
       "stars": 0,
-      "amazon_link": "https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/ref=sr_1_1?crid=3NHKYXH2RT2UH&dib=eyJ2IjoiMSJ9.uKnS_KWeq01ns81nQdT5TKDgVdf1uDYD2kUsBJlrfuH5zXmHUr-rbjAC8PTepJCzdT2eHlaz-DO0lj6rn3ksEq1HihaQhU8wIOVYWxUn5CKX_P83IanHwbpW-wppf7a5uYjI5em5gVRavCt2M2NZ30aQuZ-CrAmxF23oWSqMVnk4V--gxW-Rit58vLPuJrz3e1a6iAuVyEqUHjsZ1BKp4nYHOLIRUV1m-CDP6C4_kq0.B-x9gnyvToTVPY-eMdhwfdvpDr3ozOePwBeMB19Yr5g&dib_tag=se&keywords=code+complete&qid=1708990470&sprefix=code+complete%2Caps%2C102&sr=8-1"
+      "amazon_link": "https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670"
+   },
+   {
+      "id": 2,
+      "title": "The Design of Everyday Things",
+      "author": "Don Norman",
+      "image": "the-design-of-everyday-things-don-norman.jpg",
+      "review": "A joy to read!",
+      "read": true,
+      "stars": 4,
+      "amazon_link": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654"
+   },
+   {
+      "id": 3,
+      "title": "The Creative Habit",
+      "author": "Twyla Tharp",
+      "image": "the-creative-habit-by-twyla-tharp.jpg",
+      "review": "Very insightful",
+      "read": true,
+      "stars": 4,
+      "amazon_link": "https://www.amazon.com/Creative-Habit-Learn-Use-Life/dp/0743235274"
    }
 ]

@@ -14,13 +14,13 @@
 
 ### Color Palette:
 
-Primary: #3b82f6 or #2563eb
+Primary: #3b82f6 (Blue)
 
-Secondary: #9ca3af or #6b7280
+Secondary: #9ca3af (Gray)
 
-Accent: #22c55e
+Accent: #22c55e (Green)
 
-Highlight: #6366f1 or #a855f7
+Highlight: #6366f1 (Indigo)
 
 Text: #1f2937 for light backgrounds, #f9fafb for dark backgrounds
 

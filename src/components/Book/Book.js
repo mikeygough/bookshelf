@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import './Book.css';
 
 function Book(props) {
-  const { id, title, author, image, review } = props;
+  const { id, title, author, image } = props;
   return (
     <div className="Book">
       <Link to={`/details/${id}`}>
         <img
           src={`${process.env.PUBLIC_URL}/images/${image}`}
-          alt="Testing"
+          alt={title}
           width="300"
           height="300"
         />
@@ -18,7 +18,6 @@ function Book(props) {
         <h1>{title}</h1>
       </Link>
       <h2>{author}</h2>
-      <div>{review}</div>
     </div>
   );
 }
