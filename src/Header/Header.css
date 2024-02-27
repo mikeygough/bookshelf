@@ -14,3 +14,16 @@
   color: #1f2937;
   margin: 0px;
 }
+
+.Header a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: rgba(255, 255, 255, 0.835);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Header .nav-link-active {
+  color: #fff;
+  border-bottom: 2px solid;
+}

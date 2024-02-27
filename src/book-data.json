@@ -1,6 +1,6 @@
 [
    {
-      "id": 1,
+      "id": 0,
       "title": "The Box",
       "author": "Marc Levinson",
       "image": "the-box-by-marc-levinson.jpg",
@@ -10,7 +10,7 @@
       "amazon_link": "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691170819/ref=sr_1_1?crid=3DWLSB7MXLV1X&dib=eyJ2IjoiMSJ9.LHA8hOWR39zuS3Q2pBtAAbS8A3li1HtfjOL71Lkt25Gvl9-4a8YLkU46kShFLBoOmgVMjf9elLMqhfZJF5drIGihMuCbWJ51aCrzbRfI4go6SUUbEOjrgGqsEKFC8cKvAzITSRWQ9Evd0WOD-kq7TOST9GBDJam5orabohg2g6G2auUpswIO--fegPBxrb0Xr91sS5VEfn2DuRHrIKAkWTGkHuJJyF4scGAGQ4NagWE.8C_iB8-_0ULgu2GJPm9SaJnas0Dar9em7E8GUxae6Fc&dib_tag=se&keywords=the+box+levinson&qid=1708990451&sprefix=the+box+levinson%2Caps%2C125&sr=8-1"
    },
    {
-      "id": 2,
+      "id": 1,
       "title": "Code Complete",
       "author": "Steve McConnell",
       "image": "code-complete-by-steve-mcconnell.jpg",

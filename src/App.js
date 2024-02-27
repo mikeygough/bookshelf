@@ -1,14 +1,15 @@
 import React from 'react';
-import './App.css';
+import { Outlet } from 'react-router-dom';
 
+import './App.css';
 import Header from './Header/Header';
-import Bookshelf from './Bookshelf/Bookshelf';
+// import Bookshelf from './Bookshelf/Bookshelf';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Bookshelf />
+      <Outlet />
     </div>
   );
 }

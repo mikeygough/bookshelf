@@ -9,6 +9,7 @@ function Bookshelf() {
   const books = data.map(({ id, title, author, image, review }) => {
     return (
       <Book
+        id={id}
         key={id}
         title={title}
         author={author}
