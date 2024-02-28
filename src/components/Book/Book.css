@@ -1,4 +1,21 @@
 .Book {
   width: 100%;
   text-align: center;
+  background-color: #d6d3d1;
+  border-radius: 0.5rem;
+}
+
+.Book img {
+  margin-top: 1rem;
+}
+
+.Book a {
+  color: #1f2937;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+figure,
+blockquote {
+  margin-left: 0;
 }

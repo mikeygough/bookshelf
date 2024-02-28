@@ -17,7 +17,7 @@ function Header() {
             }
             to="/"
           >
-            List
+            Bookshelf
           </NavLink>
           <NavLink
             className={({ isActive }) =>

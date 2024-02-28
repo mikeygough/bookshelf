@@ -10,14 +10,23 @@ function BookDetails(props) {
 
   const params = useParams();
   const { id } = params;
-  const { title, author, image, review, read, stars, amazon_link } =
-    data[id];
+  const {
+    title,
+    author,
+    image,
+    review,
+    read,
+    stars,
+    amazon_link,
+    quotes,
+  } = data[id];
 
   const reviewStars = [];
   for (let i = 0; i < 5; i++) {
     if (i < stars) {
       reviewStars.push(
         <img
+          key={i}
           id={i}
           src={`${process.env.PUBLIC_URL}images/filledReviewStar.svg`}
           alt="Filled Review Star"
@@ -32,6 +41,7 @@ function BookDetails(props) {
     } else
       reviewStars.push(
         <img
+          key={i}
           id={i}
           src={`${process.env.PUBLIC_URL}images/unfilledReviewStar.svg`}
           alt="Unfilled Review Star"
@@ -46,7 +56,7 @@ function BookDetails(props) {
   }
 
   return (
-    <div>
+    <div className="BookDetail">
       <div>
         <img
           src={`${process.env.PUBLIC_URL}images/${image}`}
@@ -58,12 +68,22 @@ function BookDetails(props) {
 
       <div>
         <h1>{title}</h1>
-        <h2>Review {reviewStars}</h2>
-        <p> by {author}</p>
-        <p>{review}</p>
-        <p>{read ? 'Read' : 'Have not Read'}</p>
+        <h2> by {author}</h2>
+        <p>{reviewStars}</p>
+        <p>
+          <strong>My Thoughts:</strong> {review}
+        </p>
+        <strong>Quotes I like:</strong>{' '}
+        <figure>
+          {quotes.map((quote, index) => (
+            <blockquote key={index}>{quote}</blockquote>
+          ))}
+        </figure>
+        <p>{read ? '' : "Haven't read this one yet!"}</p>
         <button>
-          <a href={amazon_link}>Buy On Amazon</a>
+          <a href={amazon_link} rel={'noopener'}>
+            Buy On Amazon
+          </a>
         </button>
       </div>
     </div>

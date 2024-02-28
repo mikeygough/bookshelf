@@ -18,13 +18,7 @@ Primary: #3b82f6 (Blue)
 
 Secondary: #9ca3af (Gray)
 
-Accent: #22c55e (Green)
-
-Highlight: #6366f1 (Indigo)
-
 Text: #1f2937 for light backgrounds, #f9fafb for dark backgrounds
-
-Additional: Shades of brown (brown-500 or brown-600) for thematic elements.
 
 ### Dev Notes:
 

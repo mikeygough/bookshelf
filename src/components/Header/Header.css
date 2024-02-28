@@ -4,26 +4,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #9ca3af;
+  background-color: #e7e5e4;
+  border-radius: 0.5rem;
 }
 
-.Header > * {
+.Header header > * {
   color: #1f2937;
   margin: 0px;
+}
+
+.Header h1 {
+  color: #3b82f6;
 }
 
 .Header a {
   display: inline-block;
   padding: 0.5em 1em;
-  color: rgba(255, 255, 255, 0.835);
+  color: #1f2937;
   font-weight: bold;
   text-decoration: none;
 }
 
 .Header .nav-link-active {
-  color: #fff;
+  color: #3b82f6;
   border-bottom: 2px solid;
+}
+
+.Header a:first-child {
+  padding-left: 0px;
 }
