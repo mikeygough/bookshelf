@@ -13,3 +13,23 @@
 .BookDetail img {
   margin-top: 1rem;
 }
+
+figure,
+blockquote {
+  margin-left: 0;
+}
+
+.BookDetail button {
+  padding: 0.2em;
+  margin: 0;
+  border: 1.5px solid #3b82f6;
+  font-size: 0.75rem;
+}
+
+.BookDetail a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #1f2937;
+  font-weight: bold;
+  text-decoration: none;
+}

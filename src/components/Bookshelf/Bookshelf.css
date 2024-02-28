@@ -3,7 +3,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 1rem;
 }
 
 @media screen and (max-width: 1070px) {
@@ -16,4 +16,30 @@
   .Bookshelf {
     grid-template-columns: 1fr;
   }
+}
+
+.Bookshelf-Wrapper form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.Bookshelf-Wrapper input,
+.Bookshelf-Wrapper button {
+  padding: 1em;
+  margin: 0;
+  border: 1.5px solid #3b82f6;
+  font-size: 1rem;
+}
+
+.Bookshelf-Wrapper form,
+.Bookshelf-Wrapper input {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.Bookshelf-Wrapper form,
+.Bookshelf-Wrapper button {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
