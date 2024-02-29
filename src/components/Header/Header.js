@@ -1,11 +1,17 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
 import './Header.css';
 
 function Header() {
   return (
-    <div className="Header">
+    <motion.div
+      className="Header"
+      initial={{ opacity: 0, x: -500 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <header>
         <h1>Bookshelf</h1>
         <h2>A Bookshelf... You know, but it's virtual!</h2>
@@ -29,7 +35,7 @@ function Header() {
           </NavLink>
         </div>
       </header>
-    </div>
+    </motion.div>
   );
 }
 

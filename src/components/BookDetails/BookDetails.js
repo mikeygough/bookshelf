@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import data from '../../book-data.js';
 
 import './BookDetail.css';
@@ -56,7 +57,12 @@ function BookDetails(props) {
   }
 
   return (
-    <div className="BookDetail">
+    <motion.div
+      className="BookDetail"
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1, x: 0 }}
+      transition={{ duration: 0.75 }}
+    >
       <div>
         <img
           src={`${process.env.PUBLIC_URL}images/${image}`}
@@ -69,24 +75,29 @@ function BookDetails(props) {
       <div>
         <h1>{title}</h1>
         <h2> by {author}</h2>
-        <p>{reviewStars}</p>
-        <p>
-          <strong>My Thoughts:</strong> {review}
-        </p>
-        <strong>Quotes I like:</strong>{' '}
-        <figure>
-          {quotes.map((quote, index) => (
-            <blockquote key={index}>{quote}</blockquote>
-          ))}
-        </figure>
         <p>{read ? '' : "Haven't read this one yet!"}</p>
+        {read && (
+          <>
+            <p>{reviewStars}</p>
+            <p>
+              <strong>My Thoughts:</strong> {review}
+            </p>
+            <strong>Quotes I like:</strong>{' '}
+            <figure>
+              {quotes.map((quote, index) => (
+                <blockquote key={index}>{quote}</blockquote>
+              ))}
+            </figure>
+          </>
+        )}
+
         <button>
           <a href={amazon_link} rel={'noopener'}>
             Buy On Amazon
           </a>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+
 import Book from '../Book/Book';
 import './Bookshelf.css';
 
@@ -29,7 +31,12 @@ function Bookshelf() {
     });
 
   return (
-    <div className="Bookshelf-Wrapper">
+    <motion.div
+      className="Bookshelf-Wrapper"
+      initial={{ opacity: 0, x: -500 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <form>
         <input
           value={query}
@@ -38,12 +45,17 @@ function Bookshelf() {
         />
         <button type="submit">Search</button>
       </form>
-      <div className="Bookshelf">
+      <motion.div
+        className="Bookshelf"
+        initial={{ opacity: 0, x: -500 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+      >
         {books.length > 0
           ? books
           : 'No Books Match Your Search Query...'}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
