@@ -1,16 +1,12 @@
 ## Getting Started (Mikey's)
 
-`npx create-react-app@latest react-tip-calculator`
-
 ### The Gist:
 
-- As a user I want to see a bookshelf of the books I've read.
+Bookshelf is exactly as it sounds; a virtual bookshelf!
 
-- As a user I want to be able to record notes about each book I've read.
+Data is loaded from book-data.json and rendered to the user as a grid of books. Users can then click on a book to be taken to its details page via React Router Dom. The details page includes additional information about a book such as if has been read, its rating, comments and quotes. Bookshelf uses colors from Tailwind & animations from Framer Motion.
 
-- As a user I want to be able to add a book I've read.
-
-- As a user I want to be able to see the books I'm currently reading.
+Bookshelf is mobile-friendly and actively deployed at https://mikeygough.github.io/bookshelf/
 
 ### Color Palette:
 
@@ -22,10 +18,10 @@ Text: #1f2937 for light backgrounds, #f9fafb for dark backgrounds
 
 ### Dev Notes:
 
-- TailwindCSS
+Project created with...
 
-- FramerMotion
+`npx create-react-app@latest bookshelf`
 
-- Read / Not Read tag ( absolute position )
+To start the app, clone the repository then run
 
-- Animate adding stars
+`npm start`

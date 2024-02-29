@@ -29,7 +29,7 @@ function BookDetails(props) {
         <img
           key={i}
           id={i}
-          src={`${process.env.PUBLIC_URL}images/filledReviewStar.svg`}
+          src={`${process.env.PUBLIC_URL}/images/filledReviewStar.svg`}
           alt="Filled Review Star"
           onClick={() => {
             setStateData([
@@ -44,7 +44,7 @@ function BookDetails(props) {
         <img
           key={i}
           id={i}
-          src={`${process.env.PUBLIC_URL}images/unfilledReviewStar.svg`}
+          src={`${process.env.PUBLIC_URL}/images/unfilledReviewStar.svg`}
           alt="Unfilled Review Star"
           onClick={() => {
             setStateData([
@@ -65,7 +65,7 @@ function BookDetails(props) {
     >
       <div>
         <img
-          src={`${process.env.PUBLIC_URL}images/${image}`}
+          src={`${process.env.PUBLIC_URL}/images/${image}`}
           alt={title}
           width="300"
           height="300"
